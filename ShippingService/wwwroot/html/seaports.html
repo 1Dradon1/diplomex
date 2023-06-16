@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="..\css\seaportsStyles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <a href="/html/seaports.html">Home</a>
+            <a href="/html/shippingOverview.html">Shippings</a>
+        </div>
+        <div id="seaportCreation">
+            <span>Name</span>
+            <input id="name" value="База-1" type="text">
+
+            <span>Широта</span>
+            <div class="container">
+                <div class="coordinates">
+                    <label>градусы</label>
+                    <input class="degrees" id="latitudeDegrees" value="0" type="number">
+                </div>
+                <div class="coordinates">
+                    <label>минуты</label>
+                    <input class="minutes" id="latitudeMinutes" value="0" type="number">
+                </div>
+                <div class="coordinates">
+                    <label>секунды</label>
+                    <input class="seconds" id="latitudeSeconds" value="0" type="number">
+                </div>
+            </div>
+
+            <span>Долгота</span>
+            <div class="container">
+                <div class="coordinates">
+                    <label>градусы</label>
+                    <input class="degrees" id="longitudeDegrees" value="0" type="number">
+                </div>
+                <div class="coordinates">
+                    <label>минуты</label>
+                    <input class="minutes" id="longitudeMinutes" value="0" type="number">
+                </div>
+                <div class="coordinates">
+                    <label>секунды</label>
+                    <input class="seconds" id="longitudeSeconds" value="0" type="number">
+                </div>
+            </div>
+            <button type="button" onclick="createSeaport()">Создать морской порт</button>
+        </div>
+        <div id="seaportsContent">
+
+        </div>
+
+        <script src="..\js\sendRequestUtilities.js"></script>
+        <script src="..\js\seaports.js"></script>
+    </body>
+</html>

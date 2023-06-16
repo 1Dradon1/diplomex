@@ -1,0 +1,137 @@
+*{
+    
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(32, 32, 32);
+}
+a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+h1{
+    color: antiquewhite;
+}
+P{
+    color: antiquewhite;
+}
+label{
+    color: antiquewhite;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.nav{
+    display: flex;
+    width: 7vw;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.contentPart {
+    width: 30%;
+    height: 100%;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid;
+    border-color: antiquewhite;
+    background-color: rgb(56, 56, 56);
+    margin-bottom: 30px;
+}
+#mooredShips{
+    display: flex;
+    justify-content: center;
+}
+#mooredShips div{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#mooredShips div div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+#mooredShips button{
+    width: 30%;
+}
+#seaportLocationInfo p,h1,select,button{
+    margin-top: 15px;
+    
+}
+.inputSpace{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.inputSpace label{
+    margin-top: 10px;
+}
+#cargoCreation input{
+    width: 50%;
+}
+#cargoCreation textarea{
+    width: 50%;
+    max-width: 100%;
+}
+#cargoCreation input:last-child{
+    width: 30%;
+}
+#seaportManagerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+#storage{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+#storage span{
+    color: antiquewhite;
+}
+#storageTable{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+    height: 70%;
+    
+}
+#storageTable tr{
+    display: flex;
+    justify-content: space-around;
+    height: 25%;
+}
+#storageTable tr td{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+}
+#storageNavigation{
+    width: 40%;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+}
+
+#storageNavigation button{
+    width: 35%;
+}

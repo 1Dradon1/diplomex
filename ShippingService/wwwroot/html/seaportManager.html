@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="..\css\seaportManagerStyles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav">
+            <a href="/html/seaports.html">Home</a>
+            <a href="/html/shippingOverview.html">Shippings</a>
+        </div>
+        <div id="seaportManagerContent">
+            <div class="contentPart">
+                <div class="container" id="mooredShips">
+                    <h1>Moored ships</h1>
+                </div>
+            </div>
+            <div class="contentPart" id="seaportInfo">
+                <div class="container" id="seaportLocationInfo">
+                    <h1 id="seaportName">Seaport Name</h1>
+                    <p id="positionX"></p>
+                    <p id="positionY"></p>
+                    <button onclick="sendCargos()">Отправить выбранные грузы</button>
+                    <select id="availableSeaports"></select>
+                    <button onclick="removeCargos()">Удалить выбранные грузы</button>
+                    <div class="inputSpace" id="cargoCreation">
+                        <label>Title</label><input id="title" value="Груз" type="text">
+                        <label>Weight</label><input id="weight" value="1" type="number">
+                        <label>Length</label><input id="length" value="1" type="number">
+                        <label>Width</label><input id="width" value="1" type="number">
+                        <label>Height</label><input id="height" value="1" type="number">
+                        <label>Description</label><textarea id="description" value="" type="text"></textarea>>
+                        <input type="button" value="Создать груз" onclick="createCargo()">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="contentPart" >
+                <div class="container" id="storage">
+                    <h1>Storage</h1>
+                    <table id="storageTable">
+                    </table>
+                    <div id="storageNavigation">
+                        <button id="leftButton" onclick="moveLeft()">LEFT</button>
+                        <button id="rightButton" onclick="moveRight()">RIGHT</button>
+                        <span id="currentPage">1</span>
+                    </div>
+                </div>
+                <div class="container" id="shipCreation">
+                    <div class="inputSpace">
+                        <label>Name</label><input id="name" value="Корабль1" type="text">
+                        <label>Speed m/s</label><input id="maxSpeedInMetersPerSecond" value="1" type="number">
+                        <label>cargoCompartmentHeight</label><input id="cargoCompartmentHeight" value="1" type="number">
+                        <label>cargoCompartmentWidth</label><input id="cargoCompartmentWidth" value="1" type="number">
+                        <label>cargoCompartmentLength</label><input id="cargoCompartmentLength" value="1" type="number">
+                        <label>cargoCompartmentLoadCapacity</label><input id="cargoCompartmentLoadCapacity" value="1" type="number">
+                        <input type="button" value="Создать корабль" onclick="createShip()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="..\js\sendRequestUtilities.js"></script>
+        <script src="..\js\seaportManager.js"></script>
+    </body>
+</html>
